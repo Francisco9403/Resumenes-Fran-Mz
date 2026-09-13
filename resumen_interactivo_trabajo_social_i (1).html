@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen de Estudio: Trabajo Social I (UNPAZ)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* Custom scrollbar for a polished look */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-indigo-100 selection:text-indigo-900">
+
+    <!-- Mobile Header -->
+    <div class="lg:hidden bg-white border-b border-slate-200 sticky top-0 z-50 px-4 py-3 flex items-center justify-between shadow-sm">
+        <div class="flex items-center gap-2">
+            <i data-lucide="book-open" class="w-6 h-6 text-indigo-600"></i>
+            <span class="font-bold text-slate-800">TS I - UNPAZ</span>
+        </div>
+        <button id="mobile-menu-btn" class="text-slate-600 hover:text-indigo-600 focus:outline-none">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+    </div>
+
+    <div class="flex h-screen overflow-hidden">
+        
+        <!-- Sidebar Navigation -->
+        <aside id="sidebar" class="w-64 bg-white border-r border-slate-200 flex-shrink-0 hidden lg:flex flex-col h-full absolute lg:static z-40 transition-transform transform -translate-x-full lg:translate-x-0">
+            <div class="p-6 border-b border-slate-200 flex items-center gap-3">
+                <div class="bg-indigo-100 text-indigo-600 p-2 rounded-lg">
+                    <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <h1 class="font-bold text-slate-800 text-lg leading-tight">Trabajo Social I</h1>
+                    <p class="text-xs text-slate-500 font-medium tracking-wide uppercase mt-1">Guía 2026 - UNPAZ</p>
+                </div>
+            </div>
+            
+            <div class="p-4 overflow-y-auto flex-1">
+                <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3 px-3">Contenidos</p>
+                <nav class="space-y-1" id="nav-links">
+                    <a href="#intro" class="nav-item flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg text-slate-600 hover:bg-slate-50 hover:text-indigo-600 transition-colors">
+                        <i data-lucide="home" class="w-4 h-4"></i> Inicio
+                    </a>
+                    <a href="#clase-2" class="nav-item flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg text-slate-600 hover:bg-slate-50 hover:text-indigo-600 transition-colors">
+                        <i data-lucide="bookmark" class="w-4 h-4"></i> Clase 2: Desarrollismo
+                    </a>
+                    <a href="#clase-3" class="nav-item flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg text-slate-600 hover:bg-slate-50 hover:text-indigo-600 transition-colors">
+                        <i data-lucide="bookmark" class="w-4 h-4"></i> Clase 3: Reconceptualización
+                    </a>
+                    <a href="#clase-4" class="nav-item flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg text-slate-600 hover:bg-slate-50 hover:text-indigo-600 transition-colors">
+                        <i data-lucide="bookmark" class="w-4 h-4"></i> Clase 4: Dictadura Militar
+                    </a>
+                    <a href="#clase-5" class="nav-item flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg text-slate-600 hover:bg-slate-50 hover:text-indigo-600 transition-colors">
+                        <i data-lucide="bookmark" class="w-4 h-4"></i> Clase 5: El PAN
+                    </a>
+                    <a href="#clase-8" class="nav-item flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg text-slate-600 hover:bg-slate-50 hover:text-indigo-600 transition-colors">
+                        <i data-lucide="bookmark" class="w-4 h-4"></i> Clase 8: Los años 90
+                    </a>
+                    <a href="#clase-9" class="nav-item flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg text-slate-600 hover:bg-slate-50 hover:text-indigo-600 transition-colors">
+                        <i data-lucide="bookmark" class="w-4 h-4"></i> Clase 9: Poscrisis 2003
+                    </a>
+                    <a href="#clase-10" class="nav-item flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg text-slate-600 hover:bg-slate-50 hover:text-indigo-600 transition-colors">
+                        <i data-lucide="bookmark" class="w-4 h-4"></i> Clase 10: Intervención
+                    </a>
+                </nav>
+            </div>
+            <div class="p-4 border-t border-slate-200">
+                <button onclick="window.print()" class="w-full flex items-center justify-center gap-2 px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-sm font-medium rounded-lg transition-colors">
+                    <i data-lucide="printer" class="w-4 h-4"></i> Imprimir Resumen
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 overflow-y-auto relative h-full">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
+                
+                <section id="intro" class="mb-16 scroll-mt-20">
+                    <div class="text-center mb-10">
+                        <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">Gran Resumen de Estudio</h1>
+                        <p class="text-lg text-slate-500 max-w-2xl mx-auto">Material completo, contextualizado y estructurado para aprobar la materia <span class="text-indigo-600 font-semibold">Trabajo Social I (UNPAZ)</span>, basado en la bibliografía oficial de la Guía 2026.</p>
+                    </div>
+                </section>
+
+                <section id="clase-2" class="mb-16 scroll-mt-20">
+                    <div class="mb-6 flex items-center gap-4">
+                        <span class="flex items-center justify-center w-12 h-12 rounded-2xl bg-indigo-600 text-white font-bold text-xl shadow-lg shadow-indigo-200">2</span>
+                        <div>
+                            <h2 class="text-2xl sm:text-3xl font-bold text-slate-800 tracking-tight">Desarrollismo y Desarrollo de la Comunidad</h2>
+                            <p class="text-sm text-slate-500 font-medium mt-1"><i data-lucide="user" class="inline w-4 h-4 mr-1"></i>Autor: M. Hornes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 mb-8 shadow-sm">
+                        <h3 class="flex items-center text-indigo-800 font-bold mb-3 text-lg"><i data-lucide="info" class="w-5 h-5 mr-2"></i> Conceptos Previos / Contexto Básico</h3>
+                        <p class="text-indigo-900/80 text-sm leading-relaxed mb-3">
+                            <strong>¿Qué es el Desarrollismo?</strong> Fue una teoría y estrategia económica y social impulsada principalmente por Estados Unidos para América Latina entre los años 50 y 60. Su idea principal era que los países "subdesarrollados" o "atrasados" debían industrializarse y modernizarse siguiendo el ejemplo de los países "desarrollados" (EE.UU. y Europa).
+                        </p>
+                        <p class="text-indigo-900/80 text-sm leading-relaxed">
+                            Para el Trabajo Social, esto significó la llegada del método de "Desarrollo de la Comunidad", donde el profesional iba a los barrios a "educar" a la gente para que se integre al sistema.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow">
+                            <h3 class="text-base sm:text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-3">A. ¿Qué actores y qué elementos del contexto permitieron el surgimiento del desarrollismo?</h3>
+                            <ul class="text-slate-600 text-sm leading-relaxed space-y-4 list-none pl-0">
+                                <li class="relative pl-6">
+                                    <span class="absolute left-0 top-1.5 w-2 h-2 rounded-full bg-indigo-400"></span>
+                                    <strong>El Contexto Mundial:</strong> Nos encontramos en plena Guerra Fría (mundo bipolar dividido entre EE.UU. y la URSS) y posguerra. En América Latina, el punto de quiebre es la <strong>Revolución Cubana (1959)</strong>. Este evento genera pánico en Estados Unidos, que teme que la pobreza y la desigualdad empujen a otros países hacia el comunismo.
+                                </li>
+                                <li class="relative pl-6">
+                                    <span class="absolute left-0 top-1.5 w-2 h-2 rounded-full bg-indigo-400"></span>
+                                    <strong>Los Actores Clave:</strong>
+                                    <ul class="mt-3 space-y-3 pl-4 border-l-2 border-slate-100">
+                                        <li class="relative pl-4"><span class="absolute left-[-5px] top-2 w-2 h-px bg-slate-300"></span><strong>Estados Unidos:</strong> Actúa como líder, lanzando la <strong>Alianza para el Progreso (1961)</strong>, un masivo programa de "ayuda" económica y social para evitar nuevas revoluciones.</li>
+                                        <li class="relative pl-4"><span class="absolute left-[-5px] top-2 w-2 h-px bg-slate-300"></span><strong>Organismos Internacionales:</strong> El Banco Mundial (BM), el FMI, la ONU, la OEA y el BID. Estos organismos financiaban los planes y bajaban la línea sobre cómo los países debían alcanzar el desarrollo.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow">
+                            <h3 class="text-base sm:text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-3">B. ¿Qué aportes teóricos de las ciencias sociales influyeron en el modelo desarrollista?</h3>
+                            <p class="text-slate-600 text-sm mb-3">Las ciencias sociales buscaron justificar el modelo con dos grandes teorías:</p>
+                            <ul class="text-slate-600 text-sm leading-relaxed space-y-4 list-none pl-0">
+                                <li class="relative pl-6">
+                                    <span class="absolute left-0 top-1.5 w-2 h-2 rounded-full bg-emerald-400"></span>
+                                    <strong>1. Teoría Estructural-Funcionalista (Talcott Parsons):</strong> Entendía a la sociedad como un organismo o sistema que debía estar en equilibrio y armonía. Creía ciegamente en la "evolución": las sociedades tradicionales (rurales/atrasadas) debían transformarse y copiar a las sociedades modernas e industriales.
+                                </li>
+                                <li class="relative pl-6">
+                                    <span class="absolute left-0 top-1.5 w-2 h-2 rounded-full bg-emerald-400"></span>
+                                    <strong>2. Teorías de la Marginalidad (Ej: DESAL / Gino Germani):</strong> Afirmaban que la culpa de la pobreza no era del sistema capitalista desigual, sino que había grupos "marginados" con culturas atrasadas que no sabían integrarse a la modernidad. La solución era "educar" y cambiar la conducta del pobre.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow">
+                            <h3 class="text-base sm:text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-3">C. Noción del enfoque de Desarrollo de la Comunidad</h3>
+                            <div class="bg-amber-50 border border-amber-200 text-amber-800 p-3 rounded-lg text-xs font-medium mb-4 flex items-center gap-2">
+                                <i data-lucide="alert-circle" class="w-4 h-4"></i> Contiene las palabras clave requeridas en la consigna.
+                            </div>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-3">
+                                El Desarrollo de la Comunidad fue la principal estrategia social de la <strong>Alianza para el Progreso</strong>. Su objetivo era intervenir sobre los sectores populares que sufrían la <strong>marginalidad</strong> para lograr su <strong>evolución y desarrollo</strong>. La meta final era la <strong>integración</strong> pacífica de estos grupos al sistema capitalista moderno, evitando cualquier estallido social o revolución.
+                            </p>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Para lograrlo, se impulsaba la <strong>promoción y participación social</strong>, pero desde una visión técnica, impuesta y controlada desde arriba. Aquí, el Trabajador Social asumía el rol de <strong>agente de cambio</strong>. Su tarea consistía en realizar un <strong>abordaje comunitario</strong> de corte fuertemente tecnocrático: se basaba en la estricta <strong>aplicación de métodos y técnicas</strong> que se presentaban como "neutrales", pero que en realidad buscaban controlar el conflicto, educar y modificar las conductas de la población para adaptarlas al modelo de país impuesto.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="clase-3" class="mb-16 scroll-mt-20">
+                    <div class="mb-6 flex items-center gap-4">
+                        <span class="flex items-center justify-center w-12 h-12 rounded-2xl bg-indigo-600 text-white font-bold text-xl shadow-lg shadow-indigo-200">3</span>
+                        <div>
+                            <h2 class="text-2xl sm:text-3xl font-bold text-slate-800 tracking-tight">Movimiento de Reconceptualización</h2>
+                            <p class="text-sm text-slate-500 font-medium mt-1"><i data-lucide="users" class="inline w-4 h-4 mr-1"></i>Autoras: Y. Rivolta y P. Villadangos</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 mb-8 shadow-sm">
+                        <h3 class="flex items-center text-indigo-800 font-bold mb-3 text-lg"><i data-lucide="info" class="w-5 h-5 mr-2"></i> Conceptos Previos / Contexto Básico</h3>
+                        <p class="text-indigo-900/80 text-sm leading-relaxed mb-3">
+                            <strong>¿Qué fue el Movimiento de Reconceptualización (MR)?</strong> Fue un proceso histórico-político fundamental que se dio en el Trabajo Social latinoamericano en los años 60 y 70, en un clima de gran efervescencia revolucionaria global.
+                        </p>
+                        <p class="text-indigo-900/80 text-sm leading-relaxed">
+                            <strong>¿Qué "reconceptualizó" (qué cambió)?</strong> Hasta ese momento, el Trabajo Social era conservador, importaba manuales de Estados Unidos, se creía "neutral" (paramédico/aséptico) y solo buscaba adaptar al individuo al capitalismo. El MR vino a romper con eso: buscó crear un Trabajo Social puramente latinoamericano, basado en la ciencia (muchas veces el marxismo), fuertemente politizado, y cuyo objetivo ya no era "adaptar al pobre", sino comprometerse con la <strong>transformación social profunda</strong> (la emancipación de las clases oprimidas).
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow">
+                            <h3 class="text-base sm:text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-3">A. ¿Por qué el MR no fue un movimiento homogéneo? Actores y quiebres</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4"><strong>No fue homogéneo</strong> porque no existió una única forma de pensar. Fue un escenario de intensos y acalorados debates políticos y teóricos sobre cómo debía intervenir la profesión. Se dividió en tres grandes tendencias (actores):</p>
+                            
+                            <div class="grid sm:grid-cols-3 gap-4 mb-4">
+                                <div class="bg-slate-50 rounded-xl p-4 border border-slate-100">
+                                    <h4 class="font-bold text-red-600 text-sm mb-2">1. Sectores Revolucionarios</h4>
+                                    <p class="text-xs text-slate-600">(Grupo ECRO). Los más transformadores. Buscaban un TS con base científica (marxismo), comprometido con la revolución y ligado a la militancia y clases oprimidas.</p>
+                                </div>
+                                <div class="bg-slate-50 rounded-xl p-4 border border-slate-100">
+                                    <h4 class="font-bold text-blue-600 text-sm mb-2">2. Sectores Conservadores</h4>
+                                    <p class="text-xs text-slate-600">(UCISS). Querían mantener el statu quo. Defendían un TS ligado a la moral católica, rechazando tajantemente las ideas marxistas y la politización.</p>
+                                </div>
+                                <div class="bg-slate-50 rounded-xl p-4 border border-slate-100">
+                                    <h4 class="font-bold text-emerald-600 text-sm mb-2">3. Reformistas / Desarrollistas</h4>
+                                    <p class="text-xs text-slate-600">Se ubicaban en el centro. Querían modernizar la profesión con mejores técnicas y mayor rigor científico, pero sin cuestionar a fondo el sistema capitalista.</p>
+                                </div>
+                            </div>
+                            
+                            <p class="text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-3">
+                                <strong>El quiebre:</strong> El proceso fue interrumpido de manera trágica por la instauración de las <strong>dictaduras cívico-militares</strong> en la década del 70, que censuraron y persiguieron a los sectores más críticos.
+                            </p>
+                        </div>
+
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow">
+                            <h3 class="text-base sm:text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-3">B. ¿Qué medios propiciaron su difusión en América Latina?</h3>
+                            <p class="text-slate-600 text-sm mb-3">Se usaron dos vías principales, creadas y gestionadas por los propios latinoamericanos, independientes de EE.UU.:</p>
+                            <ul class="text-slate-600 text-sm leading-relaxed space-y-3 list-none pl-0">
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="mic" class="w-5 h-5 text-indigo-500 mt-0.5 flex-shrink-0"></i>
+                                    <div><strong>Seminarios Regionales:</strong> Fueron encuentros internacionales masivos (Porto Alegre, Montevideo, General Roca, etc.) donde estudiantes y profesionales debatían libremente.</div>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="book-open" class="w-5 h-5 text-indigo-500 mt-0.5 flex-shrink-0"></i>
+                                    <div><strong>Revistas Profesionales:</strong> Destacan <em>Hoy en Trabajo Social</em> y <em>Selecciones de Servicio Social</em>. Dejaron de traducir textos norteamericanos para publicar a autores que pensaban los problemas reales de nuestra región.</div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow">
+                            <h3 class="text-base sm:text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-3">C. Aportes vigentes hasta la actualidad (El Legado)</h3>
+                            <ul class="text-slate-600 text-sm leading-relaxed space-y-3 list-disc pl-5 marker:text-indigo-400">
+                                <li><strong>La dimensión Ético-Político:</strong> Es el mayor legado. El MR dejó en claro que la intervención <em>nunca</em> es neutral o puramente técnica. Siempre tomamos una posición frente a la desigualdad.</li>
+                                <li><strong>Pensar desde América Latina:</strong> La necesidad de producir nuestro propio conocimiento, entendiendo los problemas desde nuestra historia de dependencia.</li>
+                                <li><strong>Rechazo al rol de "ejecutor acrítico":</strong> El Trabajador Social debe ser reflexivo y crítico, no un simple burócrata que administra los planes del Estado sin cuestionarlos.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="clase-4" class="mb-16 scroll-mt-20">
+                    <div class="mb-6 flex items-center gap-4">
+                        <span class="flex items-center justify-center w-12 h-12 rounded-2xl bg-indigo-600 text-white font-bold text-xl shadow-lg shadow-indigo-200">4</span>
+                        <div>
+                            <h2 class="text-2xl sm:text-3xl font-bold text-slate-800 tracking-tight">Dictadura cívico-militar en Argentina</h2>
+                            <p class="text-sm text-slate-500 font-medium mt-1"><i data-lucide="user" class="inline w-4 h-4 mr-1"></i>Autor: J. Nascone</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 mb-8 shadow-sm">
+                        <h3 class="flex items-center text-indigo-800 font-bold mb-3 text-lg"><i data-lucide="info" class="w-5 h-5 mr-2"></i> Conceptos Previos / Contexto Básico</h3>
+                        <p class="text-indigo-900/80 text-sm leading-relaxed">
+                            <strong>¿Qué ocurrió en 1976?</strong> Se instauró en Argentina un Terrorismo de Estado a través de una dictadura militar. Su objetivo no era solo tomar el poder político, sino utilizar el terror y la represión sistemática (desapariciones, torturas) para disciplinar a la sociedad y poder imponer a la fuerza un <strong>modelo económico neoliberal</strong>, que destruyó la industria nacional y empobreció al pueblo, abandonando el Estado de bienestar.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow">
+                            <h3 class="text-base sm:text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-3">A. El contexto de la dictadura en la intervención sobre la cuestión social</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-3">
+                                El Estado abandonó su rol protector (salud, educación) y dejó que el libre mercado organizara la sociedad. Esto provocó el cierre de fábricas, desempleo masivo y un salto tremendo en la pobreza.
+                            </p>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                <strong>Impacto en la intervención:</strong> Fue un retroceso brutal. Se prohibió terminantemente el trabajo social barrial y comunitario porque organizarse era visto como "subversivo". A los profesionales se les forzó a realizar tareas puramente burocráticas, de asistencia básica y de control social policial (volver al enfoque paramédico/parajurídico), obligándolas, por ejemplo, a participar en desalojos violentos de villas miseria.
+                            </p>
+                        </div>
+
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow">
+                            <h3 class="text-base sm:text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-3">B. Impactos evidentes en las Unidades Académicas (Escuelas de TS)</h3>
+                            <p class="text-slate-600 text-sm mb-3">El golpe desmanteló de forma devastadora todo lo logrado durante la Reconceptualización:</p>
+                            <ul class="text-slate-600 text-sm leading-relaxed space-y-3 list-disc pl-5 marker:text-rose-500">
+                                <li><strong>Cierres y censura:</strong> Se cerraron carreras enteras (como en la Universidad del Sur), se intervinieron los planes de estudio y se eliminó la libertad de cátedra. Las licenciaturas universitarias fueron bajadas de rango a simples "tecnicaturas" instrumentales.</li>
+                                <li><strong>Quema de libros:</strong> Se destruyeron las bibliotecas y cualquier texto que hablara de marxismo o transformación social.</li>
+                                <li><strong>Persecución:</strong> Profesionales, docentes y estudiantes sufrieron persecución ideológica. Decenas de colegas fueron asesinados o figuran como detenidos-desaparecidos, y muchos otros fueron forzados al exilio o despedidos.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow">
+                            <h3 class="text-base sm:text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-3">C. Mecanismos de resistencia del colectivo profesional</h3>
+                            <p class="text-slate-600 text-sm mb-3">Pese al terrorismo de Estado generalizado, hubo estrategias para sostener la profesión:</p>
+                            <ul class="text-slate-600 text-sm leading-relaxed space-y-3 list-none pl-0">
+                                <li class="relative pl-6">
+                                    <span class="absolute left-0 top-1.5 w-2 h-2 rounded-full border-2 border-indigo-500"></span>
+                                    <strong>"La universidad de las catacumbas":</strong> Espacios clandestinos en casas particulares donde estudiantes y docentes se juntaban a leer a escondidas los textos prohibidos.
+                                </li>
+                                <li class="relative pl-6">
+                                    <span class="absolute left-0 top-1.5 w-2 h-2 rounded-full border-2 border-indigo-500"></span>
+                                    <strong>Organización semi-clandestina:</strong> Creación de agrupaciones (como la Asociación de Asistentes Sociales de Rosario) que operaban casi en las sombras para contener a los colegas.
+                                </li>
+                                <li class="relative pl-6">
+                                    <span class="absolute left-0 top-1.5 w-2 h-2 rounded-full border-2 border-indigo-500"></span>
+                                    <strong>Resistencia silenciosa institucional:</strong> Prácticas éticas de supervivencia. Dentro de las rígidas instituciones, muchas colegas intentaron camuflar su ayuda y mantener un trato solidario sin levantar sospechas.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="clase-5" class="mb-16 scroll-mt-20">
+                    <div class="mb-6 flex items-center gap-4">
+                        <span class="flex items-center justify-center w-12 h-12 rounded-2xl bg-indigo-600 text-white font-bold text-xl shadow-lg shadow-indigo-200">5</span>
+                        <div>
+                            <h2 class="text-2xl sm:text-3xl font-bold text-slate-800 tracking-tight">Pobreza y transición democrática - El PAN</h2>
+                            <p class="text-sm text-slate-500 font-medium mt-1"><i class="inline w-4 h-4 mr-1" data-lucide="users"></i>Autores: Lescano y Hornes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 mb-8 shadow-sm">
+                        <h3 class="flex items-center text-indigo-800 font-bold mb-3 text-lg"><i data-lucide="info" class="w-5 h-5 mr-2"></i> Conceptos Previos / Contexto Básico</h3>
+                        <p class="text-indigo-900/80 text-sm leading-relaxed">
+                            <strong>El retorno de la democracia (1983):</strong> Cuando Raúl Alfonsín asume la presidencia, se encuentra con un país devastado económica y socialmente por la dictadura, con un índice de pobreza inédito del 20%. Ante la urgencia del hambre, el Estado debe crear por primera vez programas de asistencia alimentaria masiva a nivel nacional.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow">
+                            <h3 class="text-base sm:text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-3">A. Características del Programa Alimentario Nacional (PAN)</h3>
+                            <ul class="text-slate-600 text-sm leading-relaxed space-y-2 list-disc pl-5 marker:text-indigo-400">
+                                <li>Fue creado en 1984 como respuesta a la emergencia social heredada.</li>
+                                <li>Fue el <strong>primer programa gubernamental masivo de entrega directa de alimentos</strong> a lo largo de todo el país (la famosa "Caja PAN", que cubría el 30% de los nutrientes de una familia).</li>
+                                <li>No era solo entrega de comida; incluía <strong>subprogramas</strong> complementarios de educación para la salud, control de crecimiento infantil, apoyo a huertas comunitarias y saneamiento básico.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow">
+                            <h3 class="text-base sm:text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-3">B. Por qué era "universal" pero de carácter "focalizado"</h3>
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div class="bg-indigo-50/50 p-4 rounded-xl border border-indigo-100">
+                                    <h4 class="font-bold text-indigo-800 mb-2">Universal (en concepción)</h4>
+                                    <p class="text-sm text-slate-600">Porque el discurso del gobierno y su filosofía reconocían que la alimentación es un <strong>derecho humano básico y universal</strong> que el Estado democrático debía garantizarle a cualquier ciudadano para la reparación democrática.</p>
+                                </div>
+                                <div class="bg-amber-50/50 p-4 rounded-xl border border-amber-100">
+                                    <h4 class="font-bold text-amber-800 mb-2">Focalizado (en implementación)</h4>
+                                    <p class="text-sm text-slate-600">En la práctica, como los recursos eran limitados, se usó el Mapa de la Emergencia Social (NBI) para "focalizar" la entrega <strong>exclusivamente</strong> en las familias en extrema pobreza, dejando afuera a trabajadores empobrecidos.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow">
+                            <h3 class="text-base sm:text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-3">C. Rol del Trabajo Social y tareas de intervención</h3>
+                            <p class="text-slate-600 text-sm mb-3">La profesión fue central operando como "Agentes PAN", ya que el Estado necesitaba profesionales que conocieran la dinámica de los barrios. Sus tareas implicaban:</p>
+                            <ul class="text-slate-600 text-sm leading-relaxed space-y-3 list-none pl-0">
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0"></i>
+                                    <div><strong>Asistencia directa:</strong> Trabajo cara a cara entregando las cajas en escuelas o clubes.</div>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0"></i>
+                                    <div><strong>Aplicación de herramientas técnicas:</strong> Debían completar la "Ficha de Evaluación" en cada hogar para certificar el nivel de riesgo de la familia (inicio del uso de saberes expertos y estadísticos para medir la pobreza).</div>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0"></i>
+                                    <div><strong>Promoción comunitaria:</strong> Coordinar charlas de nutrición, organizar a los vecinos y conectar a las familias con otras áreas del Estado.</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="clase-8" class="mb-16 scroll-mt-20">
+                    <div class="mb-6 flex items-center gap-4">
+                        <span class="flex items-center justify-center w-12 h-12 rounded-2xl bg-indigo-600 text-white font-bold text-xl shadow-lg shadow-indigo-200">8</span>
+                        <div>
+                            <h2 class="text-2xl sm:text-3xl font-bold text-slate-800 tracking-tight">Los años 90 - El Estado Neoliberal</h2>
+                            <p class="text-sm text-slate-500 font-medium mt-1"><i data-lucide="users" class="inline w-4 h-4 mr-1"></i>Autoras: Fernández y Andrada</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 mb-8 shadow-sm">
+                        <h3 class="flex items-center text-indigo-800 font-bold mb-3 text-lg"><i data-lucide="info" class="w-5 h-5 mr-2"></i> Conceptos Previos / Contexto Básico</h3>
+                        <p class="text-indigo-900/80 text-sm leading-relaxed">
+                            <strong>El Menemismo y los 90:</strong> Durante el gobierno de Carlos Menem, el Estado se achicó al máximo. Se privatizaron empresas públicas y se flexibilizaron las leyes laborales (contratos basura), generando desempleo masivo. El Estado dejó de garantizar derechos universales, diciendo que el mercado debía regular todo.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow">
+                            <h3 class="text-base sm:text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-3">A. Interpretación de la cuestión social por el Estado neoliberal</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-3">
+                                Hubo un profundo cambio ideológico. La "cuestión social" (falta de trabajo, pobreza) dejó de entenderse como una "falla estructural del sistema económico capitalista".
+                            </p>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                El neoliberalismo impuso que la pobreza era un <strong>fracaso o incapacidad individual</strong>. Se instaló la lógica del "sálvese quien pueda" y del mérito: si eras pobre o desocupado, era tu culpa por no saber competir ni adaptarte al libre mercado. La pobreza se <em>individualizó</em>.
+                            </p>
+                        </div>
+
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow">
+                            <h3 class="text-base sm:text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-3">B. Características de las políticas públicas en los 90</h3>
+                            <p class="text-slate-600 text-sm mb-4">Como el Estado abandonó los derechos universales, las políticas sociales adoptaron tres rasgos:</p>
+                            <div class="space-y-4">
+                                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                                    <h4 class="font-bold text-slate-800 text-sm mb-1">1. Hiper-focalizadas</h4>
+                                    <p class="text-xs text-slate-600">Solo se destinaban a los grupos en extrema indigencia o "riesgo biológico" de muerte. Se exigía demostrar profunda miseria para recibir la mínima ayuda.</p>
+                                </div>
+                                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                                    <h4 class="font-bold text-slate-800 text-sm mb-1">2. Asistencialistas y paliativas</h4>
+                                    <p class="text-xs text-slate-600">Planes de emergencia para garantizar la supervivencia biológica (comida). No resolvían el problema de fondo, dependían de la "buena voluntad" y generaban clientelismo.</p>
+                                </div>
+                                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                                    <h4 class="font-bold text-slate-800 text-sm mb-1">3. Tercerizadas / Desinstitucionalizadas</h4>
+                                    <p class="text-xs text-slate-600">El Estado se desligó de su responsabilidad delegando la ayuda y transfiriendo fondos a ONGs, la Iglesia o fundaciones privadas (filantropía).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow">
+                            <h3 class="text-base sm:text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-3">C. Especificidades de la intervención del Trabajo Social</h3>
+                            <ul class="text-slate-600 text-sm leading-relaxed space-y-3 list-disc pl-5 marker:text-indigo-400">
+                                <li>La profesión sufrió en carne propia la <strong>precarización, fragmentación e inestabilidad</strong> laboral (contratos precarios).</li>
+                                <li><strong>Perfil de "gestor de la escasez":</strong> El profesional fue empujado a un rol puramente burocrático, gerencial y tecnocrático. Su tarea era administrar recursos insuficientes y hacer de "auditor": controlar a las familias para certificar quién era lo suficientemente pobre para "merecer" la ayuda.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="clase-9" class="mb-16 scroll-mt-20">
+                    <div class="mb-6 flex items-center gap-4">
+                        <span class="flex items-center justify-center w-12 h-12 rounded-2xl bg-indigo-600 text-white font-bold text-xl shadow-lg shadow-indigo-200">9</span>
+                        <div>
+                            <h2 class="text-2xl sm:text-3xl font-bold text-slate-800 tracking-tight">Poscrisis 2003 y expansión profesional</h2>
+                            <p class="text-sm text-slate-500 font-medium mt-1"><i data-lucide="users" class="inline w-4 h-4 mr-1"></i>Autoras: Demoy y Giuliano</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 mb-8 shadow-sm">
+                        <h3 class="flex items-center text-indigo-800 font-bold mb-3 text-lg"><i data-lucide="info" class="w-5 h-5 mr-2"></i> Conceptos Previos / Contexto Básico</h3>
+                        <p class="text-indigo-900/80 text-sm leading-relaxed">
+                            <strong>El estallido del 2001 y Néstor Kirchner (2003):</strong> El modelo neoliberal explotó en 2001 (saqueos, "que se vayan todos"). La sociedad no creía en las instituciones. Cuando Kirchner asume, su urgencia es pacificar el país y recuperar la autoridad del Estado. Para eso, pone a las políticas sociales y al Ministerio de Desarrollo Social en el centro de la escena.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow">
+                            <h3 class="text-base sm:text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-3">A. Escenario de recuperación post 2003 e impacto en el campo profesional</h3>
+                            <ul class="text-slate-600 text-sm leading-relaxed space-y-3 list-disc pl-5 marker:text-indigo-400">
+                                <li>Para recomponer el lazo social, el <strong>Ministerio de Desarrollo Social</strong> (conducido por Alicia Kirchner, Trabajadora Social) adquiere un rol inmenso y gran presupuesto.</li>
+                                <li>Esto generó una <strong>expansión profesional sin precedentes</strong>: se triplicaron los ingresos de trabajadores sociales al Estado.</li>
+                                <li>La profesión fue <strong>jerarquizada</strong>: dejaron de ser solo ejecutores precarizados para ocupar cargos de autoridad, diseño y planificación de políticas públicas.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow">
+                            <h3 class="text-base sm:text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-3">B. Particularidades del "nuevo" perfil profesional</h3>
+                            <p class="text-slate-600 text-sm mb-4">El TS combinó sus saberes técnicos con un fuerte enfoque político y de proximidad:</p>
+                            <div class="grid sm:grid-cols-3 gap-4">
+                                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                                    <h4 class="font-bold text-slate-800 text-sm mb-2">1. Impronta Territorial</h4>
+                                    <p class="text-xs text-slate-600">Se exigió salir de las oficinas ministeriales, "embarrarse" y tener presencia constante en los barrios (Ej: Centros de Referencia, Tren Sanitario).</p>
+                                </div>
+                                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                                    <h4 class="font-bold text-slate-800 text-sm mb-2">2. Ethos Militante</h4>
+                                    <p class="text-xs text-slate-600">Saber técnico sumado al compromiso político. La empatía, el involucramiento afectivo y articular con movimientos sociales fueron claves.</p>
+                                </div>
+                                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                                    <h4 class="font-bold text-slate-800 text-sm mb-2">3. Paradoja del "saber asistir"</h4>
+                                    <p class="text-xs text-slate-600">El TS ganó jerarquía justamente por ser experto en la <em>asistencia directa y cercanía</em>, las mismas destrezas por las que había sido criticado antes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="clase-10" class="mb-16 scroll-mt-20">
+                    <div class="mb-6 flex items-center gap-4">
+                        <span class="flex items-center justify-center w-12 h-12 rounded-2xl bg-indigo-600 text-white font-bold text-xl shadow-lg shadow-indigo-200">10</span>
+                        <div>
+                            <h2 class="text-2xl sm:text-3xl font-bold text-slate-800 tracking-tight">Intervención y Dimensión Asistencial</h2>
+                            <p class="text-sm text-slate-500 font-medium mt-1"><i data-lucide="user" class="inline w-4 h-4 mr-1"></i>Autora: C. I. Lera</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 mb-8 shadow-sm">
+                        <h3 class="flex items-center text-indigo-800 font-bold mb-3 text-lg"><i data-lucide="info" class="w-5 h-5 mr-2"></i> Conceptos Previos / Contexto Básico</h3>
+                        <p class="text-indigo-900/80 text-sm leading-relaxed">
+                            <strong>¿Qué es intervenir en lo social?</strong> En Trabajo Social, intervenir no es aplicar una "receta". Es trabajar en la franja o fractura que queda entre la economía (el mercado capitalista que genera pobreza) y la política (el Estado que debe garantizar derechos). El TS opera en esa herida lidiando con tensiones constantes.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow">
+                            <h3 class="text-base sm:text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-3">A. Interpretaciones de la "intervención social"</h3>
+                            <ul class="text-slate-600 text-sm leading-relaxed space-y-3 list-disc pl-5 marker:text-indigo-400">
+                                <li>Es un proceso complejo y dinámico que es tanto <strong>teórico-metodológico</strong> (requiere saber científico y técnico) como <strong>ético-político</strong> (requiere tomar posición a favor de los derechos).</li>
+                                <li>Parte siempre de cómo la "cuestión social" impacta en la vida cotidiana de las personas.</li>
+                                <li>Intervenir significa <strong>interpretar la realidad</strong>: tomar una necesidad individual, visibilizarla como problema estructural, y tratar de transformarla en un derecho a restituir, trabajando siempre "con y para el otro".</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow">
+                            <h3 class="text-base sm:text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-3">B. Tensiones y contradicciones en la intervención profesional</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-3">
+                                <strong>La gran tensión (la ambigüedad constitutiva):</strong> El Estado y las instituciones contratan y le pagan al Trabajador Social para que arregle los problemas, repare las "fracturas sociales" y mantenga la paz, PERO, al mismo tiempo, le exigen que <strong>no altere ni modifique el orden del sistema capitalista</strong> que generó esa pobreza en primer lugar.
+                            </p>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Por esto, el profesional vive tironeado constantemente entre dos polos: hacer <strong>control social / adaptación</strong> (adaptar al sujeto para que no moleste al sistema) o buscar la <strong>emancipación / transformación</strong> (fortalecer al sujeto para que defienda sus derechos).
+                            </p>
+                        </div>
+
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow">
+                            <h3 class="text-base sm:text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-3">C. Significaciones de la "asistencia" en la historia de la profesión</h3>
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div class="bg-rose-50 p-4 rounded-xl border border-rose-100">
+                                    <h4 class="font-bold text-rose-800 mb-2 flex items-center gap-2"><i data-lucide="x-circle" class="w-4 h-4"></i> Visión Peyorativa (Pasado)</h4>
+                                    <p class="text-sm text-slate-600">Históricamente (especialmente en la Reconceptualización y los 90), dar recursos materiales fue muy criticado. Se la asociaba al "asistencialismo", a la caridad que mantiene al pobre adormecido, a la dependencia y al control moral.</p>
+                                </div>
+                                <div class="bg-emerald-50 p-4 rounded-xl border border-emerald-100">
+                                    <h4 class="font-bold text-emerald-800 mb-2 flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Visión Superadora (Lera)</h4>
+                                    <p class="text-sm text-slate-600">Se propone dejar de tenerle miedo a la asistencia y repensarla como un <strong>Derecho inalienable</strong>. Entregar comida o subsidios no es el fin del TS, pero sí es el <strong>punto de partida necesario</strong> para iniciar procesos educativos y de organización.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+            
+            <footer class="bg-white border-t border-slate-200 py-6 text-center text-slate-500 text-sm pb-24 lg:pb-6">
+                <p>Resumen generado para Trabajo Social I - UNPAZ</p>
+            </footer>
+        </main>
+    </div>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu Toggle
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const sidebar = document.getElementById('sidebar');
+            let isMenuOpen = false;
+
+            mobileBtn.addEventListener('click', () => {
+                isMenuOpen = !isMenuOpen;
+                if (isMenuOpen) {
+                    sidebar.classList.remove('-translate-x-full');
+                } else {
+                    sidebar.classList.add('-translate-x-full');
+                }
+            });
+
+            // Close sidebar when clicking a link on mobile
+            const navItems = document.querySelectorAll('.nav-item');
+            navItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    if (window.innerWidth < 1024) {
+                        sidebar.classList.add('-translate-x-full');
+                        isMenuOpen = false;
+                    }
+                });
+            });
+
+            // Intersection Observer for highlighting active section in sidebar
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('#nav-links a');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '-20% 0px -60% 0px',
+                threshold: 0
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        navLinks.forEach(link => {
+                            // Reset styling
+                            link.classList.remove('bg-indigo-50', 'text-indigo-600', 'font-bold');
+                            link.classList.add('text-slate-600', 'font-medium');
+                            
+                            // Apply active styling
+                            if (link.getAttribute('href') === `#${entry.target.id}`) {
+                                link.classList.add('bg-indigo-50', 'text-indigo-600', 'font-bold');
+                                link.classList.remove('text-slate-600', 'font-medium');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => observer.observe(section));
+        });
+    </script>
+</body>
+</html>
