@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen de Estudio: Ciencias Sociales (1er Parcial)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* Custom scrollbar for a polished look */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        
+        .prose-custom p { margin-bottom: 1rem; line-height: 1.7; color: #475569; }
+        .prose-custom strong { color: #1e293b; font-weight: 600; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-indigo-100 selection:text-indigo-900">
+
+    <!-- Mobile Header -->
+    <div class="lg:hidden bg-white border-b border-slate-200 sticky top-0 z-50 px-4 py-3 flex items-center justify-between shadow-sm">
+        <div class="flex items-center gap-2">
+            <i data-lucide="book-open" class="w-6 h-6 text-indigo-600"></i>
+            <span class="font-bold text-slate-800">Ciencias Sociales</span>
+        </div>
+        <button id="mobile-menu-btn" class="text-slate-600 hover:text-indigo-600 focus:outline-none">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+    </div>
+
+    <div class="flex h-screen overflow-hidden">
+        
+        <!-- Sidebar Navigation -->
+        <aside id="sidebar" class="w-72 bg-white border-r border-slate-200 flex-shrink-0 hidden lg:flex flex-col h-full absolute lg:static z-40 transition-transform transform -translate-x-full lg:translate-x-0 shadow-xl lg:shadow-none">
+            <div class="p-6 border-b border-slate-200 flex items-center gap-3">
+                <div class="bg-indigo-100 text-indigo-600 p-2 rounded-lg shrink-0">
+                    <i data-lucide="landmark" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <h1 class="font-bold text-slate-800 text-base leading-tight">Ciencias Sociales</h1>
+                    <p class="text-xs text-slate-500 font-medium tracking-wide uppercase mt-1">1° Parcial - Integradora</p>
+                </div>
+            </div>
+            
+            <div class="p-4 overflow-y-auto flex-1">
+                <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3 px-3">Unidades de Lectura</p>
+                <nav class="space-y-1" id="nav-links">
+                    <a href="#intro" class="nav-item flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg text-slate-600 hover:bg-slate-50 hover:text-indigo-600 transition-colors">
+                        <i data-lucide="home" class="w-4 h-4 shrink-0"></i> Inicio
+                    </a>
+                    <a href="#clase-1" class="nav-item flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg text-slate-600 hover:bg-slate-50 hover:text-indigo-600 transition-colors">
+                        <i data-lucide="factory" class="w-4 h-4 shrink-0"></i> Clase 1: Rev. Industrial
+                    </a>
+                    <a href="#clase-2" class="nav-item flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg text-slate-600 hover:bg-slate-50 hover:text-indigo-600 transition-colors">
+                        <i data-lucide="gavel" class="w-4 h-4 shrink-0"></i> Clase 2: Rev. Francesa y Marx
+                    </a>
+                    <a href="#clase-3" class="nav-item flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg text-slate-600 hover:bg-slate-50 hover:text-indigo-600 transition-colors">
+                        <i data-lucide="globe-2" class="w-4 h-4 shrink-0"></i> Clase 3: Imperialismo y 2da RI
+                    </a>
+                    <a href="#clase-4" class="nav-item flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg text-slate-600 hover:bg-slate-50 hover:text-indigo-600 transition-colors">
+                        <i data-lucide="swords" class="w-4 h-4 shrink-0"></i> Clase 4: Rev. Rusa y Fascismo
+                    </a>
+                    <a href="#clase-5" class="nav-item flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg text-slate-600 hover:bg-slate-50 hover:text-indigo-600 transition-colors">
+                        <i data-lucide="trending-down" class="w-4 h-4 shrink-0"></i> Clase 5: Del Bienestar al Neoliberalismo
+                    </a>
+                </nav>
+            </div>
+            <div class="p-4 border-t border-slate-200 bg-slate-50">
+                <button onclick="window.print()" class="w-full flex items-center justify-center gap-2 px-4 py-2 bg-white border border-slate-300 hover:bg-slate-100 text-slate-700 text-sm font-medium rounded-lg transition-colors shadow-sm">
+                    <i data-lucide="printer" class="w-4 h-4"></i> Imprimir Resumen
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 overflow-y-auto relative h-full bg-slate-50/50">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-10 py-8 lg:py-12">
+                
+                <section id="intro" class="mb-16 scroll-mt-20">
+                    <div class="bg-indigo-600 rounded-3xl p-8 sm:p-12 text-white shadow-xl bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]">
+                        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-4 drop-shadow-md">Gran Resumen de Estudio Universitario</h1>
+                        <p class="text-lg text-indigo-100 max-w-3xl font-medium leading-relaxed">
+                            Material exhaustivo para el primer parcial integrador de Ciencias Sociales. Contiene el análisis profundo de los procesos históricos, debates historiográficos y autores obligatorios según el cronograma oficial de la cátedra (Hobsbawm, Sazbón, Marx, Barbero, Saborido, Goldman).
+                        </p>
+                    </div>
+                </section>
+
+                <section id="clase-1" class="mb-20 scroll-mt-20">
+                    <div class="mb-8 flex items-center gap-4 border-b border-slate-200 pb-4">
+                        <span class="flex items-center justify-center w-14 h-14 rounded-2xl bg-indigo-600 text-white font-bold text-2xl shadow-lg shadow-indigo-200 shrink-0">1</span>
+                        <div>
+                            <h2 class="text-2xl sm:text-3xl font-bold text-slate-800 tracking-tight">El Origen de la Revolución Industrial</h2>
+                            <p class="text-sm text-slate-500 font-medium mt-1 flex items-center gap-1"><i data-lucide="book" class="w-4 h-4"></i> Lectura: Hobsbawm, E. - Industria e Imperio (Caps. 2 y 3)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="prose-custom">
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-8 mb-6">
+                            <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2"><i data-lucide="target" class="w-5 h-5 text-indigo-500"></i> 1. Desmitificando el origen (El debate historiográfico)</h3>
+                            <p>Hobsbawm inicia planteando un problema central: ¿Por qué la Revolución Industrial ocurrió en Gran Bretaña a fines del siglo XVIII y no en otro lugar o en otra época? El autor <strong>descarta categóricamente las explicaciones "exógenas"</strong> (externas a la economía política).</p>
+                            <ul class="list-disc pl-5 space-y-2 text-slate-600 mb-4">
+                                <li><strong>No fue por factores geográficos o climáticos:</strong> Otras regiones tenían climas similares o abundancia de carbón y no se industrializaron.</li>
+                                <li><strong>No fue por una superioridad científica:</strong> Los franceses estaban mucho más avanzados en ciencias naturales y matemáticas que los británicos. Los inventos ingleses (como la máquina de hilar <em>spinning-jenny</em>) eran empíricos, baratos y tecnológicamente muy sencillos, creados por artesanos prácticos, no por físicos de laboratorio.</li>
+                            </ul>
+                            <p>La respuesta es endógena: Hacia 1750, Gran Bretaña ya poseía las <strong>condiciones previas</strong> fundamentales. No existía un campesinado feudal puro; la agricultura ya estaba dirigida al mercado (capitalismo agrario) gracias a los Cercamientos (<em>Enclosures</em>). Esto expulsó población del campo y creó un mercado nacional unificado con acumulación previa de capital.</p>
+                        </div>
+
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-8 mb-6">
+                            <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2"><i data-lucide="flame" class="w-5 h-5 text-amber-500"></i> 2. Los motores de la explosión: Los tres mercados</h3>
+                            <p>Para que la acumulación se transformara en una "revolución" productiva, se necesitaba una demanda masiva que justificara la inversión en fábricas. Hobsbawm identifica tres motores:</p>
+                            
+                            <div class="grid md:grid-cols-3 gap-4 mt-4">
+                                <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl">
+                                    <h4 class="font-bold text-indigo-700 mb-2">A. El Mercado Interior</h4>
+                                    <p class="text-sm text-slate-600">Funcionó como el gran <strong>amortiguador</strong>. Su crecimiento fue lento pero constante debido al crecimiento demográfico y la urbanización. Proveía la base firme y predecible que protegía a los primeros industriales de las crisis internacionales. Demandaba alimentos, textiles básicos y, sobre todo, carbón doméstico.</p>
+                                </div>
+                                <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl">
+                                    <h4 class="font-bold text-rose-700 mb-2">B. El Mercado Exterior</h4>
+                                    <p class="text-sm text-slate-600">Fue la verdadera <strong>chispa</strong> que encendió la mecha. Crecía a saltos vertiginosos. Gran Bretaña no esperó a que la demanda mundial creciera, la fabricó. A través del colonialismo, monopolizó mercados enteros (África, América) y destruyó a la competencia (ej. arruinó la industria textil artesanal de la India).</p>
+                                </div>
+                                <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl">
+                                    <h4 class="font-bold text-emerald-700 mb-2">C. El Gobierno (El Estado)</h4>
+                                    <p class="text-sm text-slate-600">Subordinó toda su política exterior y militar a fines económicos. La poderosa armada británica (Royal Navy) garantizaba el monopolio comercial. Además, el Estado era un <strong>gran consumidor</strong> (compraba hierro, barcos, armas para las guerras), estimulando directamente la industria pesada naciente.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-8 mb-6 border-l-4 border-l-indigo-600">
+                            <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2"><i data-lucide="alert-triangle" class="w-5 h-5 text-indigo-600"></i> 3. El Algodón, la Fábrica y la Crisis (1830-1840)</h3>
+                            <p>Hobsbawm decreta que la Primera Revolución Industrial (1780-1840) es, esencialmente, <strong>la historia del algodón</strong>. Estaba intrínsecamente ligada al comercio exterior y al sistema esclavista de las plantaciones (las materias primas venían de América, impulsadas por mano de obra esclava).</p>
+                            <p>Con el algodón surge la <strong>Fábrica Moderna</strong>, que subordina al trabajador al ritmo de la máquina. Como los hombres adultos rechazaban esta pérdida de independencia, los industriales emplearon masivamente a mujeres y niños (más baratos y dóciles). Esto generó una profunda fractura social entre burguesía y proletariado urbano.</p>
+                            
+                            <div class="bg-red-50 p-4 rounded-xl border border-red-100 mt-4 text-sm text-slate-700">
+                                <strong class="text-red-800 block mb-1">La Primera Crisis Capitalista (1830s):</strong>
+                                No todo fue crecimiento. En la década de 1830, el modelo algodonero chocó contra una pared estructural: <strong>la caída de la tasa de ganancia</strong>. Al saturarse los mercados, los precios de los textiles bajaron. Los empresarios intentaron compensarlo bajando aún más los salarios (que ya estaban en niveles de subsistencia absoluta) para no perder margen de beneficio.
+                                <br><br>
+                                <em>Consecuencia:</em> Se generó miseria extrema, lo que provocó que el mercado interno no pudiera consumir lo producido (crisis de subconsumo). Esto detonó inestabilidad política y el surgimiento del movimiento obrero temprano (Ludismo, Cartismo). Los capitalistas estaba aterrorizados ante la perspectiva de un estancamiento definitivo y una revolución social.
+                            </div>
+                            
+                            <div class="bg-slate-50 border border-slate-200 p-5 rounded-xl mt-6">
+                                <h4 class="font-bold text-slate-800 mb-2">El retraso de la Industria Pesada y la clave del Ferrocarril</h4>
+                                <p class="text-sm text-slate-700">A diferencia de la vertiginosa industria algodonera, Hobsbawm señala que el <strong>carbón y el hierro</strong> experimentaron un crecimiento mucho más lento y dependiente (el carbón del consumo doméstico y el hierro de los contratos militares). Estas industrias pesadas no lograron su verdadera "revolución" hasta mediados del siglo XIX. Fue la llegada del <strong>ferrocarril</strong> el hito histórico fundamental que generó la demanda masiva de hierro, acero y carbón, destrabando la segunda fase de la industrialización británica.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="clase-2" class="mb-20 scroll-mt-20">
+                    <div class="mb-8 flex items-center gap-4 border-b border-slate-200 pb-4">
+                        <span class="flex items-center justify-center w-14 h-14 rounded-2xl bg-indigo-600 text-white font-bold text-2xl shadow-lg shadow-indigo-200 shrink-0">2</span>
+                        <div>
+                            <h2 class="text-2xl sm:text-3xl font-bold text-slate-800 tracking-tight">Rev. Francesa y Lucha de Clases</h2>
+                            <p class="text-sm text-slate-500 font-medium mt-1 flex flex-col gap-1">
+                                <span class="flex items-center gap-1"><i data-lucide="book" class="w-4 h-4"></i> Sazbón, J. - ¿Para qué estudiar la Revolución Francesa?</span>
+                                <span class="flex items-center gap-1"><i data-lucide="book" class="w-4 h-4 text-red-500"></i> Marx, C. y Engels, F. - Manifiesto del Partido Comunista (Cap. 1)</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="prose-custom space-y-6">
+                        <!-- Sazbón -->
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-8">
+                            <h3 class="text-xl font-bold text-slate-800 mb-4 text-indigo-700">A. Sazbón: La política moderna y la dialéctica de los derechos</h3>
+                            <p>Sazbón argumenta la vigencia absoluta de la Revolución Francesa (1789) como el <strong>acontecimiento fundacional de la modernidad política</strong>. Su principal ruptura fue la <strong>"toma de la palabra"</strong> (a través de los Cuadernos de Quejas). Por primera vez, el pueblo (Tercer Estado) rompe el monopolio discursivo de la monarquía absoluta y se autoproclama depositario de la "soberanía nacional".</p>
+                            
+                            <p class="mt-3"><strong>La Ilustración y la "invención" política:</strong> La Revolución introdujo una novedad total. Tras el rotundo fracaso del despotismo ilustrado (monarcas que intentaban aplicar reformas racionales pero mantenían el poder absoluto), los revolucionarios se vieron obligados a <strong>inventar soluciones políticas sobre la marcha</strong>. Tuvieron que superar las meras fórmulas teóricas de los libros filosóficos iluministas para afrontar el caos inmediato del colapso del Antiguo Régimen.</p>
+
+                            <h4 class="font-bold text-slate-800 mt-4">La expansión dialéctica de los Derechos:</h4>
+                            <p>La revolución no fue estática, fue un proceso de radicalización donde las clases sociales pujaban por empujar los límites:</p>
+                            <ul class="list-none pl-0 space-y-3 mt-2">
+                                <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5 text-indigo-500 shrink-0"></i> <span><strong>Derechos Civiles (1789):</strong> La burguesía instaura la igualdad ante la ley, la libertad de expresión y la inviolabilidad de la propiedad privada.</span></li>
+                                <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5 text-indigo-500 shrink-0"></i> <span><strong>Derechos Políticos (1792):</strong> La etapa republicana y jacobina empuja el sufragio universal masculino. Ya no basta con ser libre, hay que gobernar.</span></li>
+                                <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5 text-indigo-500 shrink-0"></i> <span><strong>Derechos Sociales (1793):</strong> Bajo la presión de las masas urbanas hambrientas (<em>sans-culottes</em>), se exige el derecho a la subsistencia y la fijación de precios máximos para el pan.</span></li>
+                            </ul>
+
+                            <div class="bg-indigo-50 p-4 rounded-xl mt-4 text-sm border border-indigo-100">
+                                <strong>El límite del Universalismo Burgués:</strong> Sazbón subraya la gran contradicción. La revolución habló en nombre de la "humanidad", pero excluyó a la mitad de ella. El silenciamiento político de las mujeres quedó plasmado en el trágico final de <strong>Olimpia de Gouges</strong> (autora de la Declaración de los Derechos de la Mujer y la Ciudadana), evidenciando que la nueva república era un pacto puramente masculino.
+                            </div>
+                            
+                            <h4 class="font-bold text-slate-800 mt-6 border-t pt-4 border-slate-100">El laboratorio de regímenes y el debate contemporáneo</h4>
+                            <p class="mt-2 text-slate-700">Sazbón destaca que, en un lapso de apenas 25 años, Francia se convirtió en un inmenso <strong>"laboratorio político"</strong> donde se experimentaron casi todas las formas de gobierno de la modernidad: <strong>monarquía de derecho divino, monarquía constitucional, república, dictadura (jacobina), imperio y restauración.</strong></p>
+                            
+                            <p class="mt-3 text-slate-700 border-l-4 border-indigo-400 pl-4 py-1 bg-slate-50"><strong>La polémica con François Furet:</strong> El autor dedica gran parte del texto a debatir con la corriente revisionista liderada por Furet. En el contexto de la Guerra Fría, Furet decretó que <em>"la Revolución ha terminado"</em> y vinculó sus dinámicas más radicales (el jacobinismo) directamente con el origen de los totalitarismos del siglo XX. Sazbón rechaza tajantemente esta visión, sosteniendo que la Revolución Francesa <strong>no ha terminado</strong>, ya que su estela y sus promesas emancipatorias originarias siguen siendo un horizonte ético y político inacabado.</p>
+                        </div>
+
+                        <!-- Marx y Engels -->
+                        <div class="bg-red-50 rounded-2xl shadow-sm border border-red-200 p-6 sm:p-8">
+                            <div class="flex items-center gap-3 mb-4">
+                                <i data-lucide="users-2" class="w-8 h-8 text-red-600"></i>
+                                <h3 class="text-xl font-bold text-red-800">B. Marx y Engels: "Burgueses y Proletarios" (El Manifiesto)</h3>
+                            </div>
+                            <p class="text-red-900 font-medium mb-4 italic">"La historia de todas las sociedades que han existido hasta nuestros días es la historia de las luchas de clases."</p>
+                            
+                            <p class="text-slate-700">En 1848, Marx y Engels publican este texto fundamental utilizando el método del <strong>Materialismo Histórico</strong>. Sostienen que el motor de la historia no son las ideas o la religión, sino la estructura material/económica y el conflicto irresoluble entre oprimidos y opresores.</p>
+                            
+                            <h4 class="font-bold text-red-800 mt-5">1. El rol revolucionario histórico de la Burguesía</h4>
+                            <p class="text-slate-700">A diferencia de otras corrientes, Marx no niega el inmenso impacto transformador de la burguesía. Al contrario, afirma que ha jugado un rol <strong>altamente revolucionario</strong> en la historia:</p>
+                            <ul class="list-disc pl-5 space-y-1 text-slate-700 text-sm mb-4">
+                                <li>Destruyó el sistema feudal estático, las ilusiones religiosas y los velos patriarcales.</li>
+                                <li>Instauró la explotación abierta, descarada y directa basada únicamente en el "pago al contado" (el nexo del dinero).</li>
+                                <li>Impulsó un desarrollo de las fuerzas productivas fenomenal (máquinas, industria) y creó el <strong>mercado mundial</strong>, obligando a todas las naciones a adoptar el modo de producción capitalista o perecer.</li>
+                            </ul>
+
+                            <h4 class="font-bold text-red-800 mt-5">2. La simplificación de los antagonismos</h4>
+                            <p class="text-slate-700">El capitalismo moderno (surgido tras la Rev. Industrial) tiene una particularidad: simplificó las jerarquías sociales feudales. Toda la sociedad se está dividiendo cada vez más en dos grandes campos enemigos que se enfrentan directamente: <strong>La Burguesía</strong> (dueña de los medios de producción) y el <strong>Proletariado</strong> (que, al carecer de propiedad, debe vender su fuerza de trabajo para sobrevivir).</p>
+
+                            <h4 class="font-bold text-red-800 mt-5">3. El capitalista como el hechicero (Las crisis)</h4>
+                            <p class="text-slate-700">Marx advierte que la burguesía es como un brujo que ha conjurado fuerzas productivas tan gigantescas que ya no puede controlarlas. El capitalismo está condenado a sufrir <strong>crisis periódicas de superproducción</strong> (como la que relató Hobsbawm en 1830). En estas crisis se destruye riqueza absurda e irracionalmente porque "hay demasiada civilización, demasiados medios de vida, demasiada industria".</p>
+
+                            <div class="bg-red-600 text-white p-4 rounded-xl mt-5 text-sm shadow-md">
+                                <strong class="block mb-1">El Sepulturero del Capitalismo:</strong>
+                                La burguesía, al concentrar a los obreros en grandes fábricas, alienarlos y someterlos a la maquinaria, genera las condiciones materiales para su propia destrucción. El proletariado no es solo una clase sufriente, es la única clase verdaderamente revolucionaria, destinada a tomar el poder estatal, abolir la propiedad privada burguesa y eliminar las clases sociales definitivamente. <em>La burguesía produce, ante todo, sus propios sepultureros.</em>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="clase-3" class="mb-20 scroll-mt-20">
+                    <div class="mb-8 flex items-center gap-4 border-b border-slate-200 pb-4">
+                        <span class="flex items-center justify-center w-14 h-14 rounded-2xl bg-indigo-600 text-white font-bold text-2xl shadow-lg shadow-indigo-200 shrink-0">3</span>
+                        <div>
+                            <h2 class="text-2xl sm:text-3xl font-bold text-slate-800 tracking-tight">Imperialismo y 2da Revolución Industrial</h2>
+                            <p class="text-sm text-slate-500 font-medium mt-1 flex flex-col gap-1">
+                                <span class="flex items-center gap-1"><i data-lucide="book" class="w-4 h-4"></i> Hobsbawm, E. - La Era del Imperio (Cap. 3)</span>
+                                <span class="flex items-center gap-1"><i data-lucide="book" class="w-4 h-4"></i> Barbero, M.I. - La industrialización en la 2da mitad del siglo XIX</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="prose-custom space-y-6">
+                        
+                        <!-- Hobsbawm Imperialismo -->
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-8 border-t-4 border-t-emerald-500">
+                            <h3 class="text-xl font-bold text-emerald-800 mb-4">A. Hobsbawm: La Era del Imperio (1875-1914)</h3>
+                            <p>El último cuarto del siglo XIX presenció un fenómeno inédito: un puñado de Estados occidentales (Gran Bretaña, Francia, Alemania, EE.UU.) se dividió política, económica y territorialmente la totalidad del mundo no desarrollado (África, Asia, el Pacífico). Este es el <strong>Nuevo Imperialismo</strong>.</p>
+                            
+                            <p><strong>Las causas económicas del Imperialismo:</strong> Hobsbawm descarta que fuera un mero capricho político o de prestigio. El motor real fue la crisis económica capitalista previa, conocida como la <em>Gran Depresión de 1873-1896</em> (una crisis de rentabilidad o deflación, donde los precios y beneficios caían drásticamente). El capitalismo de libre competencia llegó a su límite. Ante esto, el capital buscó desesperadamente tres cosas que las colonias podían ofrecer:</p>
+                            <ol class="list-decimal pl-5 space-y-2 text-slate-600 mb-4">
+                                <li><strong>Nuevos mercados monopólicos:</strong> Espacios protegidos de la competencia internacional donde volcar los excedentes de producción manufacturada sin que otras potencias intervinieran.</li>
+                                <li><strong>Inversiones de capital más rentables:</strong> Invertir en infraestructuras (ferrocarriles, puertos) en las colonias daba márgenes de ganancia mucho mayores que en Europa.</li>
+                                <li><strong>Materias primas específicas:</strong> Con los nuevos avances tecnológicos, se necesitaban recursos que solo estaban en el "Tercer Mundo" (caucho para neumáticos, cobre para electricidad, petróleo).</li>
+                            </ol>
+                            <p>El mundo quedó drásticamente dividido en países "avanzados" e industrializados frente a países "atrasados" convertidos en meros exportadores primarios dependientes. Esto preparó el terreno de rivalidades interimperialistas que detonaría la Primera Guerra Mundial.</p>
+                        </div>
+
+                        <!-- Barbero 2da RI -->
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-8">
+                            <h3 class="text-xl font-bold text-slate-800 mb-4">B. Barbero: Nuevos Paradigmas y Organización Empresarial</h3>
+                            <p>A la par de la expansión imperial, en el centro capitalista ocurría la <strong>Segunda Revolución Industrial</strong>. A diferencia de la primera (algodón, carbón, empírica, británica), esta fase fue liderada por EE.UU. y Alemania, y se basó en la aplicación sistemática de la ciencia a la industria.</p>
+
+                            <div class="grid md:grid-cols-2 gap-6 mt-4">
+                                <div>
+                                    <h4 class="font-bold text-slate-800 border-b pb-2 mb-2">1. Sectores de Punta y Transportes</h4>
+                                    <ul class="text-sm text-slate-600 space-y-2">
+                                        <li><strong>Materiales/Energía:</strong> El acero barato (Bessemer) reemplaza al hierro. La <strong>electricidad</strong> y el <strong>petróleo</strong> (motor a combustión) transforman la matriz energética.</li>
+                                        <li><strong>Ciencia/Química:</strong> Surge la industria química (farmacéutica, fertilizantes, explosivos) que exige masivos laboratorios de I+D corporativos.</li>
+                                        <li><strong>Ferrocarril y Barco a Vapor:</strong> Acortan el planeta e integran el mercado mundial. Un dato clave de Barbero es que <strong>el ferrocarril fue la primera "empresa moderna"</strong> de la historia. Su inmensa escala, la enorme movilización de capitales requerida para su construcción y su compleja logística forzaron, por primera vez, la creación de estructuras de gestión burocráticas y jerárquicas controladas por gerentes asalariados. El <strong>telégrafo</strong>, en tanto, separa la información del transporte físico.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-800 border-b pb-2 mb-2">2. La Empresa Moderna</h4>
+                                    <ul class="text-sm text-slate-600 space-y-2">
+                                        <li>Fin del capitalismo de competencia "perfecta". El tamaño de estas nuevas industrias exigía inversiones de capital inmensas.</li>
+                                        <li><strong>Sociedades Anónimas:</strong> Separación entre el dueño (accionista) y el control real de la empresa (gerentes y burócratas asalariados).</li>
+                                        <li><strong>Oligopolios:</strong> Surgen los Carteles, Trusts y Holdings. Las corporaciones buscan la integración horizontal (comprar a la competencia) o vertical (controlar de la mina a la venta).</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="bg-slate-100 rounded-xl p-5 mt-6 border border-slate-300">
+                                <h4 class="font-bold text-slate-800 mb-3 text-center uppercase tracking-wide">El control científico del trabajo humano</h4>
+                                <div class="grid sm:grid-cols-2 gap-4">
+                                    <div class="bg-white p-4 rounded border border-slate-200">
+                                        <h5 class="font-bold text-indigo-700">Taylorismo (Organización Científica)</h5>
+                                        <p class="text-xs text-slate-600 mt-1">Busca expropiar el saber de "oficio" del obrero. Separación estricta entre concepción (gerencia) y ejecución (obrero). Estudio de tiempos y movimientos (cronómetro) para eliminar ineficiencias. Pago a destajo (por pieza) para forzar el ritmo.</p>
+                                    </div>
+                                    <div class="bg-white p-4 rounded border border-slate-200">
+                                        <h5 class="font-bold text-indigo-700">Fordismo (1913 en adelante)</h5>
+                                        <p class="text-xs text-slate-600 mt-1">Suma al Taylorismo la <strong>cadena de montaje</strong>. La pieza va al obrero, la máquina dicta el ritmo absoluto. Estandarización de partes. Introdujo el "salario de 5 dólares diarios" para convertir al obrero automotriz en un masivo consumidor y evitar huelgas. Inicia el consumo de masas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section id="clase-4" class="mb-20 scroll-mt-20">
+                    <div class="mb-8 flex items-center gap-4 border-b border-slate-200 pb-4">
+                        <span class="flex items-center justify-center w-14 h-14 rounded-2xl bg-indigo-600 text-white font-bold text-2xl shadow-lg shadow-indigo-200 shrink-0">4</span>
+                        <div>
+                            <h2 class="text-2xl sm:text-3xl font-bold text-slate-800 tracking-tight">Rev. Rusa, Depresión y Fascismos</h2>
+                            <p class="text-sm text-slate-500 font-medium mt-1 flex flex-col gap-1">
+                                <span class="flex items-center gap-1"><i data-lucide="book" class="w-4 h-4"></i> Saborido (Rev. Rusa) | Goldman (Liberación de la mujer) | Hobsbawm (Siglo XX, 3,4,5)</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="prose-custom space-y-6">
+                        <!-- Revolución Rusa (Saborido / Goldman) -->
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-8">
+                            <h3 class="text-xl font-bold text-red-700 mb-4 flex items-center gap-2">A. La Revolución Rusa (El experimento socialista)</h3>
+                            
+                            <p><strong>Saborido: Las fases de la Revolución.</strong> La Primera Guerra Mundial actuó como catalizador sobre el atrasado e ineficiente Imperio Zarista. Tras el colapso y la abdicación de Nicolás II (Rev. de Febrero de 1917), surgió un vacío y un "doble poder" entre el Gobierno Provisional burgués y el Soviet de Petrogrado.</p>
+                            <p>Liderados por Lenin (consignas: <em>Paz, pan y tierra</em> / <em>Todo el poder a los soviets</em>), los Bolcheviques toman el Palacio de Invierno en Octubre. A partir de allí enfrentan el desafío de sobrevivir en un país agrario arrasado:</p>
+                            <ul class="list-disc pl-5 space-y-1 text-slate-600 mb-4">
+                                <li><strong>Tratado de Brest-Litovsk (1918):</strong> Para cumplir su promesa de paz y salvar la revolución ante una inminente invasión total, los bolcheviques firman este humillante tratado, cediendo enormes extensiones de territorio y recursos a Alemania.</li>
+                                <li><strong>Comunismo de Guerra (1918-1921):</strong> Estatización total y requisas forzosas de granos para ganar la <strong>Guerra Civil</strong>. El Ejército Rojo (liderado por Trotsky) logró vencer a los Ejércitos Blancos (apoyados por potencias extranjeras) principalmente porque el campesinado veía a los bolcheviques como el <strong>"mal menor"</strong>; si ganaban los Blancos, la tierra expropiada sería devuelta a los antiguos nobles.</li>
+                                <li><strong>La NEP (1921):</strong> "Nueva Política Económica" impulsada por Lenin. Un retroceso táctico hacia un "capitalismo de estado", permitiendo mercado libre para campesinos y reactivando la economía para evitar el colapso.</li>
+                                <li><strong>El ascenso de Stalin (fines de 1920s):</strong> Stalin derrota a Trotsky, liquida la NEP e impone la industrialización acelerada y la colectivización forzosa del campo mediante planes quinquenales y un férreo terror político.</li>
+                            </ul>
+
+                            <div class="bg-red-50 p-5 rounded-xl border border-red-200 mt-4">
+                                <h4 class="font-bold text-red-800 mb-2">Goldman: El proyecto de la mujer y la reversión estalinista</h4>
+                                <p class="text-sm text-slate-700 mb-2">Los bolcheviques originales (ej. Aleksandra Kollontai) intentaron el experimento social más radical de la historia sobre género: buscaban la <strong>extinción de la familia patriarcal</strong> burguesa. Uno de sus pilares fue la <strong>"Unión Libre"</strong>, planteando relaciones basadas pura y exclusivamente en el afecto, libres de ataduras religiosas o de conveniencia económica. Aprobaron leyes de divorcio, legalizaron el aborto (1920) y crearon el <em>Zhenotdel</em>. Su visión era que el Estado debía socializar el trabajo reproductivo (comedores y guarderías públicas) liberando a la mujer de la "esclavitud doméstica".</p>
+                                <p class="text-sm text-slate-700 mb-2"><strong>El dramático choque material:</strong> La profunda devastación del país impidió construir esa red de contención pública. Con la facilidad del divorcio en un contexto de extrema miseria y muertes de guerra, estalló el problema de los <strong>besprizornost</strong>: millones de niños huérfanos vagando por las calles, sumidos en el hambre y la delincuencia, evidenciando el choque entre la utopía liberadora y la realidad material rusa.</p>
+                                <p class="text-sm text-slate-700"><strong>La Gran Reversión y su Legado:</strong> Con Stalin, el proyecto se abandonó. En 1930 se abolió el Zhenotdel. En 1936, se criminalizó el aborto y se exaltó a la "familia socialista fuerte" por razones demográficas y disciplinarias, marcando un brutal retroceso conservador. No obstante, Goldman rescata un inmenso legado: a pesar del estalinismo, millones de mujeres ingresaron masivamente a la <strong>industria pesada</strong> y se capacitaron. Llegada la Segunda Guerra Mundial, este avance les permitió integrarse al <strong>Ejército Rojo</strong>, luchando hombro a hombro como francotiradoras, pilotos y soldadas contra el fascismo.</p>
+                            </div>
+                        </div>
+
+                        <!-- Hobsbawm: Depresión y Fascismos -->
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-8">
+                            <h3 class="text-xl font-bold text-slate-800 mb-4">B. Hobsbawm: El Abismo Económico y la Caída del Liberalismo</h3>
+                            <p>El Crack de Wall Street de 1929 y la posterior <strong>Gran Depresión</strong> destrozaron la economía capitalista y la confianza mundial en el liberalismo clásico (el libre mercado puro). Hobsbawm explica que las <strong>causas estructurales</strong> de este colapso se debieron a que Estados Unidos (la nueva gran potencia económica) no asumió su rol de estabilizador global, y a que el sistema internacional dependía de créditos estadounidenses sumamente inestables; al cortarse este flujo financiero abruptamente, arrastró a la quiebra a una Alemania ya ahogada por las reparaciones del Tratado de Versalles. El desempleo fue inédito. Contrastando con esto, la URSS, desconectada del mercado, crecía vertiginosamente, dándole enorme prestigio intelectual al comunismo.</p>
+                            
+                            <p class="mt-4"><strong>El surgimiento del Fascismo:</strong></p>
+                            <p>Las democracias liberales parecían frágiles e impotentes frente a la crisis. Esto alimentó a movimientos radicales de extrema derecha (Hitler en Alemania, Mussolini en Italia). El fascismo apeló principalmente a las masas desorientadas de la <strong>clase media baja</strong>, profundamente aterrorizadas tanto por la caída económica hacia la pobreza como por la amenaza inminente de la revolución comunista.</p>
+                            <div class="border-l-4 border-slate-500 pl-4 py-1 my-3 bg-slate-50">
+                                <strong class="text-slate-800">La Alianza Crítica:</strong> Hobsbawm aclara un punto clave: el fascismo no llegó al poder por una revolución armada. Llegó con el permiso y <strong>la complicidad de las élites conservadoras tradicionales, los grandes empresarios y el ejército</strong>. Estas clases altas pactaron con Hitler/Mussolini porque veían al fascismo como una herramienta brutal y efectiva para aniquilar a los sindicatos y destruir la amenaza bolchevique.
+                            </div>
+                            <p>La agresión imperialista del fascismo detonó la Segunda Guerra Mundial. Hobsbawm ubica a la <strong>Guerra Civil Española (1936-1939)</strong> como el gran preludio ideológico internacional, un conflicto donde ya se prefiguraba el choque entre el fascismo y el antifascismo. Finalmente, la guerra global obligó al Capitalismo Democrático y al Comunismo Soviético a formar una alianza contra-natura militar para salvar al mundo de la barbarie nazi. Hobsbawm destaca aquí el papel fundamental de los <strong>movimientos de resistencia comunistas</strong> en los países ocupados por el Eje (como Francia, Italia y Yugoslavia), quienes, gracias a su disciplina, lideraron la resistencia partisana, ganando un enorme prestigio popular y político para la posguerra.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="clase-5" class="mb-20 scroll-mt-20">
+                    <div class="mb-8 flex items-center gap-4 border-b border-slate-200 pb-4">
+                        <span class="flex items-center justify-center w-14 h-14 rounded-2xl bg-indigo-600 text-white font-bold text-2xl shadow-lg shadow-indigo-200 shrink-0">5</span>
+                        <div>
+                            <h2 class="text-2xl sm:text-3xl font-bold text-slate-800 tracking-tight">Del Bienestar al Neoliberalismo</h2>
+                            <p class="text-sm text-slate-500 font-medium mt-1 flex items-center gap-1"><i data-lucide="book" class="w-4 h-4"></i> Hobsbawm, E. - El Siglo XX (Caps. 8, 9 y 14)</p>
+                        </div>
+                    </div>
+
+                    <div class="prose-custom space-y-6">
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-8">
+                            <h3 class="text-xl font-bold text-indigo-700 mb-4">A. La Guerra Fría y Los "Años Dorados" (1950-1973)</h3>
+                            <p>Tras 1945, el mundo quedó dividido en dos superpotencias (EE.UU. y URSS). Hobsbawm califica la Guerra Fría no como un riesgo de Tercera Guerra Mundial inminente, sino como un pacto tácito de reparto de áreas de influencia bajo la "amenaza nuclear de destrucción mutua". Paradójicamente, Hobsbawm afirma que la <strong>derrota final de la URSS</strong> décadas después no se dio por una confrontación bélica, sino por su incapacidad económica para competir con el dinamismo capitalista. Al verse forzada en los años 70 a exponer su economía planificada al mercado mundial (necesitando importar tecnología occidental y cereales), la URSS cavó su propia tumba.</p>
+                            
+                            <p class="mt-4">En el lado occidental (capitalista) se dio el milagro de los <strong>Años Dorados</strong>, la etapa de mayor y más acelerado crecimiento de la historia humana. ¿Por qué ocurrió?</p>
+                            <ul class="list-disc pl-5 space-y-2 text-slate-600 mb-4">
+                                <li><strong>El pánico al bloque soviético:</strong> Las burguesías sabían que si dejaban que los obreros pasaran hambre como en 1929, votarían al comunismo. Necesitaban reformar el sistema para que fuera aceptable para las masas.</li>
+                                <li><strong>La Economía Mixta y Keynesianismo:</strong> Se abandonó el liberalismo puro. El Estado intervino planificando la macroeconomía para evitar crisis y asegurar el <strong>pleno empleo</strong>.</li>
+                                <li><strong>El Pacto Social y Fordismo:</strong> Acuerdo histórico entre Empresarios, Sindicatos y Estado. Las empresas aceptaron pagar salarios altos reales e impuestos para financiar el <strong>Estado de Bienestar</strong> (salud, educación, jubilación pública universal). A cambio, los sindicatos renunciaron a la revolución social y garantizaron paz productiva. Los obreros con plata en el bolsillo dispararon el consumo de masas (autos, electrodomésticos).</li>
+                            </ul>
+
+                            <div class="bg-amber-50 p-4 border border-amber-200 rounded-xl mt-5">
+                                <h4 class="font-bold text-amber-900 mb-1">El lado oscuro: Las consecuencias ecológicas</h4>
+                                <p class="text-sm text-amber-800">Hobsbawm no deja de advertir que la explosión productiva y la instauración de la sociedad de consumo de masas generaron un <strong>impacto ecológico sin precedentes</strong>. Este período desencadenó niveles críticos de contaminación, masivas emisiones de carbono y una explotación desmedida e irracional de combustibles fósiles, problemáticas que fueron arrogantemente ignoradas por los líderes de la época, cegados por la fe absoluta en el progreso técnico.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-8">
+                            <h3 class="text-xl font-bold text-slate-800 mb-4">B. Las Décadas de Crisis y el Triunfo Neoliberal (A partir de 1973)</h3>
+                            <p>La "Crisis del Petróleo" (1973) fue el detonante que hizo estallar el equilibrio de los Años Dorados. Surgió la temida <strong>Estanflación</strong> (estancamiento económico combinado con alta inflación), algo que las teorías keynesianas no podían resolver.</p>
+                            
+                            <p>Los grandes capitales, hartos de pagar altos impuestos y salarios, iniciaron su contraofensiva global en los años 80, impulsando la ideología del <strong>Neoliberalismo</strong> (Reagan, Thatcher).</p>
+                            <div class="grid sm:grid-cols-2 gap-4 mt-4">
+                                <div class="bg-slate-50 p-4 border border-slate-200 rounded-xl">
+                                    <h4 class="font-bold text-slate-800 text-sm mb-2">Desmantelamiento del Bienestar</h4>
+                                    <p class="text-xs text-slate-600">Se recortó el gasto público, privatizaron empresas estatales y desregularon los mercados, especialmente el sector financiero, generando inestabilidad.</p>
+                                </div>
+                                <div class="bg-slate-50 p-4 border border-slate-200 rounded-xl">
+                                    <h4 class="font-bold text-slate-800 text-sm mb-2">Deslocalización Industrial</h4>
+                                    <p class="text-xs text-slate-600">Las empresas multinacionales mudaron sus fábricas al Tercer Mundo en busca de mano de obra ultra-barata, destruyendo la capacidad industrial de Occidente y liquidando el poder histórico de los sindicatos.</p>
+                                </div>
+                            </div>
+                            <p class="mt-4 text-slate-700"><strong>Consecuencias Estructurales:</strong> Hobsbawm advierte que la economía se transnacionalizó, escapando del control democrático de los Estados-nación. Se fracturó la cohesión social, disparando obscenamente la desigualdad, generando desempleo estructural crónico y sumiendo a las clases trabajadoras en la precarización, marginación y vulnerabilidad absolutas de la era globalizada actual.</p>
+                            
+                            <div class="border-l-4 border-indigo-600 pl-4 py-1 mt-4">
+                                <strong class="text-indigo-800">El repliegue: Nacionalismos y Políticas de Identidad</strong>
+                                <p class="text-sm text-slate-700 mt-1">Como síntoma final de esta crisis, ante el brutal debilitamiento del Estado-Nación frente al mercado global, <strong>surgieron vigorosos nacionalismos separatistas y políticas de identidad excluyentes (xenofobia, racismo, integrismos).</strong> Hobsbawm interpreta estos fenómenos no como proyectos o programas políticos viables, sino como reacciones puramente emocionales y de repliegue defensivo por parte de poblaciones desorientadas que han perdido su seguridad y sus lazos sociales tradicionales frente a la incertidumbre de la globalización neoliberal.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+            
+            <footer class="bg-white border-t border-slate-200 py-8 text-center text-slate-500 text-sm pb-24 lg:pb-8 shadow-inner">
+                <p class="font-medium text-slate-600">Generado de acuerdo al Cronograma Oficial (Hobsbawm, Sazbón, Marx, Barbero, Saborido, Goldman).</p>
+                <p class="mt-1">Éxitos absolutos en el Parcial.</p>
+            </footer>
+        </main>
+    </div>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu Toggle
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const sidebar = document.getElementById('sidebar');
+            let isMenuOpen = false;
+
+            mobileBtn.addEventListener('click', () => {
+                isMenuOpen = !isMenuOpen;
+                if (isMenuOpen) {
+                    sidebar.classList.remove('-translate-x-full');
+                } else {
+                    sidebar.classList.add('-translate-x-full');
+                }
+            });
+
+            // Close sidebar when clicking a link on mobile
+            const navItems = document.querySelectorAll('.nav-item');
+            navItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    if (window.innerWidth < 1024) {
+                        sidebar.classList.add('-translate-x-full');
+                        isMenuOpen = false;
+                    }
+                });
+            });
+
+            // Intersection Observer for highlighting active section in sidebar
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('#nav-links a');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '-20% 0px -60% 0px',
+                threshold: 0
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        navLinks.forEach(link => {
+                            // Reset styling
+                            link.classList.remove('bg-indigo-50', 'text-indigo-600', 'font-bold');
+                            link.classList.add('text-slate-600', 'font-medium');
+                            
+                            // Apply active styling
+                            if (link.getAttribute('href') === `#${entry.target.id}`) {
+                                link.classList.add('bg-indigo-50', 'text-indigo-600', 'font-bold');
+                                link.classList.remove('text-slate-600', 'font-medium');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => observer.observe(section));
+        });
+    </script>
+</body>
+</html>
